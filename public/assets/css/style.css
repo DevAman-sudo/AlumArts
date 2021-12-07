@@ -5,6 +5,13 @@ body {
   background: #fff;
   color: #444;
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden !important;
+}
+
+/* google tanslate */
+.skiptranslate,
+#google_translate_element {
+  /* overflow: hidden !important; */
 }
 
 a {
@@ -13,7 +20,9 @@ a {
   transition: 0.5s;
 }
 
-a:hover, a:active, a:focus {
+a:hover,
+a:active,
+a:focus {
   color: #51d8af;
   outline: none;
   text-decoration: none;
@@ -24,7 +33,12 @@ p {
   margin: 0 0 30px 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
@@ -68,13 +82,14 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #eee;
   font-size: 14px;
   padding: 0;
-  height: 40px;
+  height: 5rem;
 }
 #topbar .contact-info i {
   font-style: normal;
   color: #50d8af;
 }
-#topbar .contact-info i a, #topbar .contact-info i span {
+#topbar .contact-info i a,
+#topbar .contact-info i span {
   padding-left: 5px;
   color: #444;
 }
@@ -103,6 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
+  padding: 3rem 0.5rem 2rem 0.5rem;
   height: 80px;
   transition: all 0.5s;
   z-index: 997;
@@ -161,7 +177,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar li {
   position: relative;
 }
-.navbar a, .navbar a:focus {
+.navbar a,
+.navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -173,12 +190,16 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   transition: 0.3s;
 }
-.navbar a i, .navbar a:focus i {
+.navbar a i,
+.navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
   color: #50d8af;
 }
 .navbar .dropdown ul {
@@ -205,7 +226,9 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .dropdown ul a i {
   font-size: 12px;
 }
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover > a {
   color: #50d8af;
 }
 .navbar .dropdown:hover > ul {
@@ -285,15 +308,19 @@ h1, h2, h3, h4, h5, h6 {
   overflow-y: auto;
   transition: 0.3s;
 }
-.navbar-mobile a, .navbar-mobile a:focus {
+.navbar-mobile a,
+.navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
   color: #0c2e8a;
 }
-.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover > a {
   color: #50d8af;
 }
-.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+.navbar-mobile .getstarted,
+.navbar-mobile .getstarted:focus {
   margin: 15px;
 }
 .navbar-mobile .dropdown ul {
@@ -316,7 +343,9 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
 }
-.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+.navbar-mobile .dropdown ul a:hover,
+.navbar-mobile .dropdown ul .active:hover,
+.navbar-mobile .dropdown ul li:hover > a {
   color: #50d8af;
 }
 .navbar-mobile .dropdown > .dropdown-active {
@@ -362,7 +391,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 34px;
   }
 }
-#hero .hero-content .btn-get-started, #hero .hero-content .btn-projects {
+#hero .hero-content .btn-get-started,
+#hero .hero-content .btn-projects {
   font-family: "Raleway", sans-serif;
   font-size: 15px;
   font-weight: bold;
@@ -608,7 +638,8 @@ section {
     text-align: center;
     padding-bottom: 15px;
   }
-  #services .box h4, #services .box p {
+  #services .box h4,
+  #services .box p {
     margin-left: 0;
     text-align: center;
   }
@@ -669,7 +700,8 @@ section {
   background: #f7f7f7;
   border-radius: 4px;
 }
-#portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
+#portfolio #portfolio-flters li:hover,
+#portfolio #portfolio-flters li.filter-active {
   color: #fff;
   background: #50d8af;
 }
@@ -706,7 +738,8 @@ section {
   font-size: 14px;
   margin-bottom: 0;
 }
-#portfolio .portfolio-item .portfolio-info .preview-link, #portfolio .portfolio-item .portfolio-info .details-link {
+#portfolio .portfolio-item .portfolio-info .preview-link,
+#portfolio .portfolio-item .portfolio-info .details-link {
   position: absolute;
   right: 50px;
   font-size: 24px;
@@ -714,7 +747,8 @@ section {
   color: rgba(255, 255, 255, 0.6);
   transition: ease-in-out 0.3s;
 }
-#portfolio .portfolio-item .portfolio-info .preview-link:hover, #portfolio .portfolio-item .portfolio-info .details-link:hover {
+#portfolio .portfolio-item .portfolio-info .preview-link:hover,
+#portfolio .portfolio-item .portfolio-info .details-link:hover {
   color: #fff;
 }
 #portfolio .portfolio-item .portfolio-info .details-link {
@@ -741,14 +775,20 @@ section {
   margin-top: 20px;
   position: relative;
 }
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
   opacity: 1;
   border: 1px solid #50d8af;
 }
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #50d8af;
 }
 .portfolio-details .portfolio-info {
@@ -787,7 +827,8 @@ section {
 #testimonials {
   padding: 30px 0;
 }
-#testimonials .testimonials-carousel, #testimonials .testimonials-slider {
+#testimonials .testimonials-carousel,
+#testimonials .testimonials-slider {
   overflow: hidden;
 }
 #testimonials .testimonial-item {
@@ -951,7 +992,8 @@ section {
   margin-bottom: 10px;
   color: #50d8af;
 }
-#contact .contact-info address, #contact .contact-info p {
+#contact .contact-info address,
+#contact .contact-info p {
   margin-bottom: 0;
   color: #000;
 }
@@ -968,11 +1010,15 @@ section {
 #contact .contact-info a:hover {
   color: #50d8af;
 }
-#contact .contact-address, #contact .contact-phone, #contact .contact-email {
+#contact .contact-address,
+#contact .contact-phone,
+#contact .contact-email {
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  #contact .contact-address, #contact .contact-phone, #contact .contact-email {
+  #contact .contact-address,
+  #contact .contact-phone,
+  #contact .contact-email {
     padding: 20px 0;
   }
 }
@@ -1035,16 +1081,18 @@ section {
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
-#contact .php-email-form input, #contact .php-email-form textarea {
+#contact .php-email-form input,
+#contact .php-email-form textarea {
   padding: 10px 14px;
   border-radius: 0;
   box-shadow: none;
   font-size: 15px;
 }
-#contact .php-email-form input::focus, #contact .php-email-form textarea::focus {
+#contact .php-email-form input::focus,
+#contact .php-email-form textarea::focus {
   background-color: #50d8af;
 }
-#contact .php-email-form button[type=submit] {
+#contact .php-email-form button[type="submit"] {
   background: #50d8af;
   border: 0;
   border-radius: 3px;
@@ -1053,7 +1101,7 @@ section {
   transition: 0.4s;
   cursor: pointer;
 }
-#contact .php-email-form button[type=submit]:hover {
+#contact .php-email-form button[type="submit"]:hover {
   background: #2dc899;
 }
 @-webkit-keyframes animate-loading {
